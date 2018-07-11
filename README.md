@@ -5,7 +5,7 @@
 
 ## Problem Statement
 
-In this lab, we'll get hands-on practice with the all the cool things the `Series` class in `pandas` has to offer!
+In this lab, we'll get hands-on practice with all the cool things the `Series` class in `pandas` has to offer!
 
 
 ### Objectives
@@ -95,7 +95,7 @@ range_of_data
 
 ### Data Types in Series Objects
 
-One way that pandas objects differs from vanilla python collections is the ability to handle multiple data types.  Recall that python lists are dynamically typed--we can create lists that hold multiple objects with different data types.  In pure python, something like:
+One way that pandas objects differ from vanilla python collections is the ability to handle multiple data types.  Recall that python lists are dynamically typed--we can create lists that hold multiple objects with different data types.  In pure python, something like:
 
 ```python
 customer_info = ['Jane Doe', True, 32, 1337.00, [1, 2, 'a', 'b']]
@@ -163,7 +163,7 @@ temp_series = pd.Series(avg_temperature)
 
 As with any index, we can access the value by passing in the index.
 
-In the cell below, use the slicing operator on the `temp_series` object to get the value for 'April'.  Store the value in the april_temp variable.
+In the cell below, use the slicing operator on the `temp_series` object to get the value for 'April'.  Store the value in the `april_temp` variable.
 
 
 ```python
@@ -227,14 +227,14 @@ print('Standard Deviation: {}'.format(std_dev_temp))
 
 ### Real World Practice--Time Series Data
 
-One common use case for pandas `Series` objects is to store **_Time Series_** data.  For Time Series data, the most intuitive thing we can use for an index is a datetime, which would allow us to easily check the value of something at a given time. 
+One common use case for pandas `Series` objects is to store **_Time Series_** data.  For Time Series data, the most intuitive thing we can use for an index is a `datetime`, which would allow us to easily check the value of something at a given time. 
 
 To finish up this lab, we'll read in some real time series data about the temperature in Central Park.  All together, we will:
 
 1. Read in the data stored in `weather_data_nyc.csv`.
 1. Store the data in a `Series`.
 1. Convert the timestamps from strings to datetimes
-1. Set the datetimes as the Series index.
+1. Set the datetimes as the `Series` index.
 1. Explore our data with descriptive statistics.
 1. Plot our time series in a beautiful graph!
 
